@@ -1,0 +1,81 @@
+<html>
+  <head>
+    <script src="https://static.freshdev.io/fdk/2.0/assets/fresh_client.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://static.freshdev.io/fdk/2.0/assets/freshdesk.css"
+    />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+
+  <body>
+    <form action="https://dummy-assist.freshdesk.com/api/v2/tickets" method="post">
+        <div class="form-group">
+          <label>Contact Name</label>
+          <input type="name"  class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label>Mobile Number</label>
+            <input type="number" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label>Location</label>
+            <input type="text" class="form-control">
+        </div>
+
+        <h3>Service Info</h3>
+
+        <div class="form-group">
+            <label>Subject</label>
+            <input type="text" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Description</label>
+            <textarea name="description" id="" cols="30" rows="10" class="form-control"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>Status</label>
+            <input type="text" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label>Priority</label>
+            <input type="text" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label>Service Group</label>
+            <input type="text" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label>Field Technicians</label>
+            <input type="text" class="form-control">
+        </div>
+
+        <h3>Appointment Info</h3>
+
+
+        <div class="form-group">
+            <label> Appointment start date & time</label>
+            <input type="datetime-local" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label> Appointment end date & time.</label>
+            <input type="datetime-local" class="form-control">
+        </div>
+
+        <input type ="checkbox" onclick="modal.html">Create another 
+        <button type = "reset" class="btn btn-primary">Cancel</button>
+        <button type="submit" class="btn btn-primary" onclick=>Create</button>
+    </form>
+    <script src="http://static.freshdev.io/fdk/2.0/assets/fresh_client.js"></script>
+    <script src="scripts/create-ticket.js">
+    </script>
+  </body>
+
+</html>
